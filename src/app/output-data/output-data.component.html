@@ -1,0 +1,28 @@
+ <div class="container mt-5 col-lg-6">
+    <div class="row">
+      <h1>Login Data</h1>
+    <div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>Adharcard No</th>
+                    <th>Mobile No</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of information, let i=index">
+                <tr>
+                    <td>{{ i+1 }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.adharcardno }}</td>
+                    <td>{{ item.mobileno }}</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    </div>
+ </div>

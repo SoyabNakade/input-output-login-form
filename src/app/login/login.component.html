@@ -1,0 +1,29 @@
+<div class="row">
+<div class="wrapper col-lg-6 border">
+    <div class="logo">
+        <img src="https://www.igaptechnologies.com/assets/slogo.png" alt="">
+    </div>
+    <div class="text-center mt-4 name" style="color: brown;" >
+        iGAP TECHNOLOGIES
+    </div>
+    <form [formGroup]="formgroup" (ngSubmit)="submit(formgroup.value)"  class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="Name" id="userName" formControlName="name" placeholder="Name">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="text" name="Adharcard No" id="userName" formControlName="adharcardno" placeholder="Adharcard No">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="text" name="mobileno" id="pwd"formControlName="mobileno" placeholder="Mobile No">
+        </div>
+        <button type="submit" class="btn mt-3">Login</button>
+    </form>
+    
+</div>
+<div class="col-lg-6">
+     <app-output-data [information]="information"></app-output-data> 
+  </div>
+</div>
